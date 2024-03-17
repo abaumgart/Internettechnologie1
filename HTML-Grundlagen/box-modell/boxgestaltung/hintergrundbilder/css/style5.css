@@ -1,0 +1,21 @@
+*{
+  box-sizing: border-box;        
+}
+.headfoot {
+  width: 750px;
+  border: gray 1px dotted;
+  padding: 10px;
+  background-color: olivedrab;
+  color: white;
+  text-align: center;
+}
+.article01 {
+  width: 750px;
+  padding: 20px 50px;
+  margin: 10px 0px;
+  background: url('../bilder/linksoben.jpg') top left no-repeat,
+              url('../bilder/rechtsoben.jpg') top right no-repeat,
+              url('../bilder/rechtsunten.jpg') bottom right no-repeat,
+              url('../bilder/linksunten.jpg') bottom left no-repeat,
+              white;
+}

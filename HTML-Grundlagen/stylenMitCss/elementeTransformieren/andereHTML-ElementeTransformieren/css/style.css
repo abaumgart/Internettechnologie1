@@ -1,0 +1,19 @@
+body { 
+  font: 1.1em/120% Georgia, Times, serif;
+}
+.trans1  {
+  transform: skew(5deg, -4deg);
+  border: 0.5em solid black;
+  font-family: Courier;
+}
+.trans2  {
+  transform: skew(-4deg, 3deg);
+  border: 0.5em solid white;
+  font-family: Times;
+  z-index: 1;
+}
+.trans3  {
+  transform: rotate(180deg) skew(4deg, -2deg);
+  border: 0.5em solid lightgray;
+  font-family: Arial;
+}

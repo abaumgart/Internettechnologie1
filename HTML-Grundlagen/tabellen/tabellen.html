@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet"  href="farben.css">
+	<title>Darstellung von Tabellen</title>
+	<style>
+		table, td, th {border: 5px solid red}
+	</style>
+</head>
+<body>
+<h1>Tabelle ohne explizite Spaltenüberschriften</h1>
+<table >
+	<tr> 						<!-- Table Row -->
+		<td>Eintrag 1</td>		<!-- Table Data -->
+		<td>Eintrag 2</td>
+		<td>Eintrag 3</td>
+	</tr> 
+	<tr> 						<!-- Table Row -->
+		<td>Detail 1</td>		<!-- Table Data -->
+		<td>Detail 2</td>
+		<td>Detail 3</td>
+	</tr> 
+
+</table>
+
+<h1>Tabelle mit Spaltenüberschriften</h1>
+<table>
+<caption >Der Ablauf:</caption>
+	<tr class="tabellenHeader"> 						<!-- Table Row -->
+		<th>Eintrag 1</th>		<!-- Table Header -->
+		<th>Eintrag 2</th>
+		<th>Eintrag 3</th>
+	</tr> 
+	<tr> 						<!-- Table Row -->
+		<td>Detail 1</td>		<!-- Table Data -->
+		<td>Detail 2</td>
+		<td>Detail 3</td>
+	</tr> 
+</table>
+
+
+<h1>Tabelle mit Kopf-Rumpf- und Fußbereich</h1>
+<table border="1">
+<caption>Der Ablauf:</caption>
+	<thead>
+		<tr> 						<!-- Table Row -->
+			<th>Eintrag 1</th>		<!-- Table Data -->
+			<th>Eintrag 2</th>
+			<th>Eintrag 3</th>
+		</tr>
+	<thead>
+	<tbody> 
+		<tr> 						<!-- Table Row -->
+			<td>Detail 1</td>		<!-- Table Data -->
+			<td>Detail 2</td>
+			<td>Detail 3</td>
+		</tr> 
+	</tbody>
+	<tfoot> 
+		<tr> 						<!-- Table Row -->
+			<td></td>		<!-- Table Data -->
+			<td>(C) Mr. X</td>
+			<td>13.04.2019</td>
+		</tr> 
+	</tfoot>
+</table>
+
+<h1>Tabelle mit Kopf-Rumpf- und Fußbereich und verbundenen Zellen</h1>
+<table border="1">
+<caption>Der Ablauf:</caption>
+
+	<thead>
+		<tr> 						
+			<th>Eintrag 1</th>		
+			<th>Eintrag 2</th>
+			<th>Eintrag 3</th>
+		</tr>
+	<thead>
+	<tbody> 
+		<tr> 						
+			<td rowspan="2">Detail 1</td>		
+			<td>Detail 2</td>
+			<td>Detail 3</td>
+		</tr> 
+		<tr> 						
+				
+			<td>Detail 22</td> 
+			<td>Detail 23</td>
+		</tr> 
+		<tr> 						
+			<td colspan="3">Detail 31</td>		
+			
+		</tr> 
+	</tbody>
+	<tfoot> 
+		<tr> 						
+			<td></td>		
+			<td>(C) Mr. X</td>
+			<td>13.04.2019</td>
+		</tr> 
+	</tfoot>
+</table>
+
+
+</body>
+</html>

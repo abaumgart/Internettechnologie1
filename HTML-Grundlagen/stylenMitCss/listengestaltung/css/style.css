@@ -1,0 +1,8 @@
+body { 
+  font: 1.1em/120% Georgia, Times, serif;
+}
+h1 { font-size: 1.4em; }
+p {  
+  font-size: 1em;
+}
+ul { list-style-image: url("../grafik/stern.png"); }

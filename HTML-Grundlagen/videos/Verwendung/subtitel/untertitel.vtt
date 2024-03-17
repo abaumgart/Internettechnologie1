@@ -1,0 +1,14 @@
+WEBVTT
+
+1
+00:00:01.000 --> 00:00:05.000
+Die <i>erste Zeile</i> von Text wird die ersten 5 Sekunden angezeigt.
+
+2
+00:00:06.000 --> 00:00:16.000
+Eine zweite Zeile wird jetzt
+für <b>10 Sekunden</b> angezeigt.
+
+3
+00:00:17.000 --> 00:00:20.000
+Video wird jetzt beendet ...

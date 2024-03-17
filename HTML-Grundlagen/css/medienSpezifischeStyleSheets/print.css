@@ -1,0 +1,17 @@
+/* Datei: print.css */
+body { margin:0px; }
+h1 { text-align: center; }
+h2 { padding: 2px;
+     text-align: center;
+}
+h3 { margin-left: 20px;
+}
+header {
+         padding: 2px;
+         text-align:center;
+}
+nav, footer { text-align: center;    }
+p {   }
+li {  }
+article p { margin: 20px; }
+article ul { margin: 20px; }

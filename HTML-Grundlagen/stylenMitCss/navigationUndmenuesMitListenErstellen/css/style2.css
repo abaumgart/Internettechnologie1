@@ -1,0 +1,29 @@
+body { 
+  font: 1.1em/120% Georgia, Times, serif;
+}
+h1 { font-size: 1.4em; }
+p {  
+  font-size: 1em;
+}
+.ul-nav {
+  list-style-type: none;
+  margin:0;
+  padding:0;
+ }
+.li-nav { display: inline; }
+.li-nav a {
+  color: black;
+  text-align: center;
+  background-color: lightgray;
+  padding: 0.2em 0.6em;
+  text-decoration: none;
+  border: 1px solid lightgray;
+  border-bottom: 1px solid darkgray;
+  border-right: 1px solid darkgray;
+}
+.li-nav a:hover {
+  background-color: silver;
+  border: 1px solid: darkgray;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}

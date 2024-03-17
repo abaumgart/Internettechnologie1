@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <title>Flexible Bilder mit picture</title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+  <h1>Das picture-Element im Einsatz</h1>
+  <p>
+  <picture> 
+     <source srcset="bilder/HK-640-WebP.webp" type="image/webp">
+     <source srcset="bilder/HK-640-jpg.jpg">
+     <!-- Fallback für alte Browser -->
+     <img src="bilder/HK-640.jpg" alt="Hong Kong Island">
+  </picture>
+  </p>
+  </body>
+</html>

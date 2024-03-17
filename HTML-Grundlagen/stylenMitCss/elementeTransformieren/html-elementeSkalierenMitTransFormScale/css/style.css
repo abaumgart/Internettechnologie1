@@ -1,0 +1,19 @@
+body { 
+  font: 1.1em/120% Georgia, Times, serif;
+  background: black;
+}
+h1 { 
+  font-size: 1.4em;
+   color: white;
+  text-align: center;
+}
+.trans { text-align: center; margin-top: 50px; }
+
+.trans img {
+  margin: 0px 0.2em;
+  border: 0.5em solid white;
+} 
+.trans a img:hover {
+  transform: scale(1.25);
+  border: 0.5em solid lightgray;
+}

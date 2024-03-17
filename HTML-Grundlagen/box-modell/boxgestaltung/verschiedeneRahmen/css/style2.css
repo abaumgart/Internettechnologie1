@@ -1,0 +1,9 @@
+.rahmen {
+  width: 500px;
+  padding: 10px;
+  border: 25px solid transparent;
+  -webkit-border-image:url('../bilder/myborder.png') 50 50 50 50 round; /* Safari 5.1 */
+  -moz-border-image:url('../bilder/myborder.png') 50 50 50 50 round; /* Safari 14.0 */
+  -o-border-image:url('../bilder/myborder.png') 50 50 50 50 round; /* Opera 11.0 */
+   border-image:url('../bilder/myborder.png') 50 50 50 50 round;
+}

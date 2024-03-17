@@ -1,0 +1,43 @@
+/*
+*CONTENT-BOXDies ist der Standard-Stil, der vom CSS Standard definiert wurde. 
+*Die Werte width und height berechnen sich nur aus dem Inhalt des 
+*Elementes und enthalten weder border, margin oder padding.
+*
+*BORDER-BOX: Die Werte width und height enthalten padding und border, aber 
+*nicht margin. Das ist das Boxmodell, das der Internet Explorer im 
+*Quirks mode verwendet.
+*/
+
+/* Universalselektor:
+*Ein Sternchen (*) ist der Universalselektor für CSS. 
+*Es matcht ein einzelnes Element eines beliebigen Typs. 
+*Das Weglassen des Sternchens bei einfachen Selektoren hat 
+*denselben Effekt. 
+*Zum Beispiel sind *.warning und .warning gleich. 
+*/
+*{
+  box-sizing: border-box;        
+}
+.foothead {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid black;
+  background-color: peru;
+  text-align: center;
+ }
+.article01 {
+  position: static;
+  width: 300px;
+  padding: 10px;
+  border: 1px solid black;
+  background-color: sandybrown;
+}
+.article02 {
+  position: relative;
+  top: -75px;
+  left: 100px;
+  width: 300px;
+  padding: 10px;
+  border: 1px solid black;
+  background-color: bisque;
+}

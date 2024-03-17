@@ -1,0 +1,12 @@
+body { 
+  font: 1.125em/150% Arial;
+}
+footer, header {
+  background-color: papayawhip;
+  border: 1px solid black;
+  padding: 2%;
+  text-align:center;
+  font-size: 1.1em;
+} 
+.condensed { font-stretch: condensed; }
+.expanded{ font-stretch: expanded;}

@@ -1,0 +1,62 @@
+/* Datei: style.css
+ */
+ 
+/* Schwarzer Rahmen,
+   Zentrierter Text,
+   5 Pixel Abstand von oben
+ */
+header,
+nav,
+footer { 
+  text-align:center;
+  border: 1px solid black;
+  margin-top: 5px;
+  padding: 5px;
+  font-family: Verdana, Arial;
+}
+
+/* Grauer Text
+ */
+h1,
+abbr {
+  color: gray;
+  font-family: Verdana, Arial;
+}
+
+/* Schriftfamilie für p-Elemente
+ */
+p { font-family: Verdana, Arial; }
+
+/* Style für einen Hinweis
+* Einrücken um 50Pixel
+* Links ein grüner Rand 
+* Abstand zwischen Balken und Text beträgt 5 px
+ */
+.hinweis {
+  margin-left: 50px; 
+  border-left: 10px solid green; 
+  padding-left: 5px;
+}
+
+/* Style für einen Hinweis als Warnung
+ */
+.warnung {
+  border-left: 10px solid red;
+  border-top: 2px solid red;
+  border-right: 10px solid red;
+  border-bottom: 2px solid red;
+  text-align: center;
+}
+
+/* Schriftgröße auf 140%
+   Hintergrundfarbe auf grau
+*/
+.kopffuss {
+  font-size: 140%;
+  background: #f5f5f5;
+}
+
+/* Schriftgröße auf 130% 
+ */
+.bigfont { font-size: 130%; }
+

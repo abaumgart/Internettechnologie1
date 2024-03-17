@@ -1,0 +1,36 @@
+*{
+  box-sizing: border-box;        
+}
+.foothead {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid black;
+  background-color: peru;
+  text-align: center;
+ }
+.article01 {
+  position: relative;
+  width: 400px;
+  padding: 10px;
+  border: 1px solid black;
+  background-color: sandybrown;
+}
+.article02 {
+  position: relative;
+  top: -30px;
+  left: 130px;
+  width: 400px; 
+  padding: 10px;
+  border: 1px solid black;
+  background-color: bisque;
+}
+.article_p1 {
+  position: absolute;
+  background-color: gold;
+  border: 2px solid black;
+  right: 25px;
+  top: 20px;
+  width: 200px;
+  padding: 5px;
+  z-index: 1;
+}

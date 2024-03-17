@@ -1,0 +1,8 @@
+
+a:link { color: red; }
+a:visited { color: green; }
+.articlestyle a:any-link { color: grey; }
+/* Chrome und Opera */
+.articlestyle a:-webkit-any-link { color: grey; }
+
+

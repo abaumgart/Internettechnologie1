@@ -1,0 +1,26 @@
+*{
+  box-sizing: border-box;        
+}
+.foothead {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid black;
+  background-color: peru;
+  text-align: center;
+ }
+.article01 {
+  position: static;
+  width: 300px;
+  padding: 10px;
+  border: 1px solid black;
+  background-color: sandybrown;
+}
+.article02 {
+  position: fixed;
+  top: 0;
+  left: 100px;
+  width: 300px;
+  padding: 10px;
+  border: 1px solid black;
+  background-color: bisque;
+}

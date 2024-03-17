@@ -1,0 +1,3 @@
+article:first-of-type { border: 2px solid black; }
+article:nth-of-type(2) { border: 5px solid red; }
+article:last-of-type { border: 2px dotted gray; }

@@ -1,0 +1,22 @@
+.my_pre {
+   background: lightgray;
+   width: 70%;
+   padding: 10px;
+   margin-bottom: 20px;
+}
+.shadow01 {  
+   box-shadow:4px 4px gray;
+}
+.shadow02 {  
+   box-shadow:4px 4px 4px gray;
+}
+.shadow03 {  
+   box-shadow:4px 4px 4px 4px gray;
+}
+.shadow04 {  
+   box-shadow:inset -4px -4px 4px 4px gray;
+}
+.my_img {
+  border: black 2px solid;
+  box-shadow: 6px 6px 6px gray;
+}

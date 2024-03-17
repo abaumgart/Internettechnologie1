@@ -1,0 +1,17 @@
+.headfoot {
+  width: 85%;
+  border: gray 1px dotted;
+  padding: 10px;
+  background-color: olivedrab;
+  color: white;
+  text-align: center;
+}
+.article01 {
+  width: 85%;
+  background-image: url('../bilder/gradient.jpg');
+  background-repeat: repeat-y;
+  border-left: gray 1px dotted;
+  border-right: gray 1px dotted;
+  padding: 10px;
+  background-color: #e8f3ea;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Weitere Formular-Elemente</title>
+    <style type="text/css">
+    	input:invalid {background: red;}
+    	input:valid {background: ivory;}
+    </style>
+</head>
+<body>
+    <h1>Weitere Formular-Elemente</h1>
+	<form id="formular1" oninput="oval.value=parseInt(ival.value)">
+		<p>Verstecktes Eingabefeld<input type="hidden" name="zwischensumme" value="399" ></p>
+		<p>Eingabefeld für eine Zahl<input type="number" name="number" autofocus value="50" min="0" max="100" step="5"></p>
+		<p>Eingabefeld für Text mit Pattern<input type="text" size="30" required placeholder="Eingabe von 5 Zahlen (0 bis 9)" name="text" pattern="[0-9]{5}"></p> <!-- Eingabefeld ist nur dann richtig, wenn das eingegebene Muster aus 5 Zahlen besteht. http://html5pattern.com -->
+		<p>Eingabefeld für Farben <input type="color" value="#FF0000"></p>
+		<p>Eingabefeld für Datum <input type="date" value="2019-12-20" min="2019-01-01" max="2019-12-31" ></p>
+		<p>Eingabefeld für eine Uhrzeit<input type="time" value="15:15" min="08:00" max="16:00"></p>
+		<p>Eingabefeld für Datum und Uhrzeit<input type="datetime-local" value="2019-12-20T14:00"></p>
+		<p>Eingabefeld für die Suche<input type="search"></p>
+		<p>Eingabefeld für E-Mail-Adressen<input type="email" multiple requried></p>
+		<p>Eingabefeld für eine URL<input type="url"></p>
+		<p>Eingabefeld für eine Telefonnummer <input type="tel"></p> <!--  Bestimmte Validierung mit Pattern-Attribut -->
+		<p>Eingabefeld für Zahlen <input type="number"></p>
+		<p>Eingabefeld für einen bestimmten Zahlenbereich <input type="range" id="ival" value="100"><output name="oval" for="ival">100</output></p>
+		
+		<!--  Nicht ausschließlich für Formulare -->
+		<p>Fortschrittsbalken: <progress value="33" max="100">Fortschritt: 33%</progress>
+		<h1>Messwerte anzeigen mit meter</h1>
+   		<p>
+		  <meter value="12" max="100">12 von 100</meter> 12 von 100<br>
+		  <meter value="0.33">33 % von 100 %</meter> 33 % von 100 %<br>
+		  <meter value="10" min="0" low="25" high="75" max="100">20 % von 100 %</meter> 20 % von 100 %<br>
+	      <meter value="80" min="0" low="50" optimum="25" high="75" max="100">80 % von 100 %</meter> 80 % von 100 %<br>
+		</p>
+		<!-- 
+		Weitere HTML Attribute für Eingabefelder (Teilweise oben implementiert)
+		- autofocus
+		- autocomplete
+		- list
+		- max, min
+		- multiple
+		- pattern
+		- placeholder
+		- required
+		- step
+		- disabled
+		- readonly
+		- tabindex
+		- accesskey
+		<fieldset> </fieldset> 
+		 -->
+		
+	</form>
+	
+	<!-- Elemente außerhalb von <form> -->
+	<input type="submit" value="Absenden" form="formular1">
+</body>
+</html>

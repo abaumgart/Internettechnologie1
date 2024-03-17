@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;        
+}
+.headfoot {
+  width: 85%;
+  border: gray 1px dotted;
+  padding: 10px;
+  background-color: olivedrab;
+color: white;
+  text-align: center;
+}
+.article01 {
+  width: 85%;
+  height: 1800px;
+  background-image: url('../bilder/pattern.png');
+  background-attachment: fixed;
+  border-left: gray 1px dotted;
+  border-right: gray 1px dotted;
+  padding: 10px;
+  background-color: #e8f3ea;
+}

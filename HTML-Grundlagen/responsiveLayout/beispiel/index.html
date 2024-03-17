@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML-Grundgerüst</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/layout.css">
+  </head>
+  <body>
+    <div class="grid">
+      <header class="header">
+        <picture class="img-logo">
+          <source media="(min-width: 1023px)" 
+            srcset="grafik/logo-desktop.jpg 1x,grafik/logo-desktop-HD.jpg 2x">
+          <source media="(min-width: 639px)" 
+            srcset="grafik/logo-tablet.jpg 1x,grafik/logo-tablet-HD.jpg 2x">
+          <source srcset="grafik/logo-smartphone.jpg 1x,grafik/logo-smartphone-HD.jpg 2x">
+          <!-- Fallback für Browser die kein <picture> können -->
+          <img src="grafik/logo.jpg" alt="Logo" class="img-logo">
+        </picture>
+      </header>
+      <nav class="nav">
+        <ul class="nav-ul">
+          <li class="nav-li"><a href="#" title="dummy"  class="nav-li-a">Startseite</a></li>
+          <li class="nav-li"><a href="#" title="dummy" class="nav-li-a">Portfolio</a></li>
+          <li class="nav-li nav-active"><strong class="nav-li-a">Blog</strong></li>
+          <li class="nav-li"><a href="#" title="dummy" class="nav-li-a">Kontakt</a></li>
+          <li class="nav-li"><a href="#" title="dummy" class="nav-li-a">Impressum</a></li>
+        </ul>
+      </nav>
+      <main class="content">
+        <article class="article">
+          <h2>Überschrift 1</h2>
+          <p><img src="grafik/cover.png" alt="Cover" class="img-art">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, </p>
+        </article>
+        <article class="article">
+          <h2>Überschrift 2</h2>
+          <p><img src="grafik/cover.png" alt="Cover" class="img-art">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, </p>
+        </article>
+        <article class="article clear">
+          <h2>Überschrift 3</h2>
+          <p><img src="grafik/cover.png" alt="Cover" class="img-art">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, </p>
+        </article>
+        <article class="article">
+          <h2>Überschrift 4</h2>
+          <p><img src="grafik/cover.png" alt="Cover" class="img-art">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, </p>
+        </article>
+      </main>
+      <aside class="aside">
+        <h3>Überschrift 5</h3>
+        <p><img src="grafik/sunrise.jpg" alt="Cover" class="img-side">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, </p>
+        
+      </aside>
+      <footer class="footer">
+        Fußzeile -  &copy;&nbsp;2020
+      </footer>
+    </div>
+  </body>
+</html>

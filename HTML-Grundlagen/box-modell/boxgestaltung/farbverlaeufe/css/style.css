@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;        
+}
+.headfoot {
+  width: 800px;
+  border: gray 1px dotted;
+  padding: 5px;
+  background-color: white;
+  text-align: center;
+}
+.my_article {
+  width: 800px;
+  padding: 5px;
+  border: gray 1px dotted;
+}
+.trans01 { background: linear-gradient(white, orange); }
+.trans02 { background: linear-gradient(to right, white, orange);  }
+.trans03 { background: linear-gradient(to right, white 30%, orange 70%);  }
+.trans04 { background: linear-gradient(to right, white 50%, orange 50%);  }
+.trans05 {
+   background: linear-gradient(to left, white 50%, orange 50%);
+   background-size: 50px 100px;
+}
+.trans06 { background: repeating-linear-gradient(40deg, white, white 25px, orange 25px, orange 50px);     }

@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;        
+}
+.headfoot {
+  width: 750px;
+  border: gray 1px dotted;
+  padding: 5px;
+  background-color: white;
+  text-align: center;
+}
+.my_article {
+  width: 750px;
+  padding: 5px;
+  border: gray 1px dotted;
+}
+.trans01 { background: radial-gradient(white, orange); }
+.trans02 { background: radial-gradient( white 30%, orange 70%);  }
+.trans03 { background: repeating-radial-gradient(white, white 10px, orange 10px, orange 20px);  }
+.trans04 { background: repeating-radial-gradient(circle, white, white 10px, orange 10px, orange 20px); }

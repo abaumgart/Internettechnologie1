@@ -1,0 +1,16 @@
+
+input { background-color: lightgray; }
+input:focus { background-color: white; }
+input:hover { box-shadow: 0 0 3px blue;  } 
+input:placeholder-shown {
+  color: white;
+}
+li { background-color: lightgray; }
+li:hover { background-color: snow; }
+li:active{ background-color: gray; }
+a:link { text-decoration: none; color: blue; }
+a:hover { font-weight: bold; }
+a:active { color: red; }
+
+
+

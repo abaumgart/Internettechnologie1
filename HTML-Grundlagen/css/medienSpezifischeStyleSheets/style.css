@@ -1,0 +1,24 @@
+/* Datei: style.css */
+body { margin:0px; }
+h1 { font-family: "Verdana", "Geneva";
+     font-size: 200%;
+     text-align: center;
+}
+h2 { font-family: "Verdana", "Geneva";
+     background: #add8e6;
+     padding: 10px;
+	 text-align: center;
+}
+h3 { font-family: "Verdana", "Geneva"; 
+     margin-left: 20px;
+}
+header { background: #add8e6;
+         padding: 2px;
+         text-align:center;
+}
+nav, footer { text-align: center;  }
+p { font-family: "Verdana", "Geneva"; }
+li { font-family: "Verdana", "Geneva"; }
+article p { margin: 20px; }
+article ul { margin: 20px; }
+hr { color: #add8e6;}

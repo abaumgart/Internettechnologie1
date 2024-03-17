@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Karma|Roboto');
+body { font-family: Arial, Verdana, Helvetica, sans-serif; }
+footer, header {
+  background-color: papayawhip;
+  border: 1px solid black;
+  padding: 2% 2%;
+  text-align:center;
+  font-family: 'Roboto', sans-serif;
+} 
+article { font-family: 'Karma', serif; }

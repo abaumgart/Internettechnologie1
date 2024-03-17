@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <title>Flexible Bilder mit picture</title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+  <h1>Das picture-Element im Einsatz</h1>
+  <p>
+  <picture> 
+     <source srcset="bilder/HK-1024-hd.jpg, bilder/HK-1024-hd.jpg 2x"
+	         media="(min-width: 1024px)">
+     <source srcset="bilder/HK-640.jpg, bilder/HK-640-hd.jpg 2x"
+	         media="(min-width: 640px)">
+     <source srcset="bilder/HK-480.jpg, bilder/HK-480-hd.jpg 2x"
+	         media="                                                          n-width: 480px)">
+     <!-- Fallback für alte Browser -->
+     <img src="bilder/HK-480.jpg" alt="Hong Kong Island">
+  </picture>
+  </p>
+  </body>
+</html>

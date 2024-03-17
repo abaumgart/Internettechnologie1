@@ -1,0 +1,7 @@
+.rahmen {
+  background-image: url('../bilder/background.jpg');
+  width: 450px;
+  height: 196px;
+  border: black 3px solid;
+  color: white;
+}

@@ -1,0 +1,6 @@
+.rahmen {
+  background: lightblue;
+  width: 85%;
+  padding: 5px;
+  border: darkblue 7px ridge;
+}

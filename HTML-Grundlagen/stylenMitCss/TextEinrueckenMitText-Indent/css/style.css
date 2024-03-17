@@ -1,0 +1,10 @@
+body { 
+  font: 1.1em/120% Georgia, Times, serif;
+}
+h1 { font-size: 1.3em;
+     font-style: italic;
+}
+.p-ident {  
+  font-size: 1em;
+  text-indent: 1.3em;
+}

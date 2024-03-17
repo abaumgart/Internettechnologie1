@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;        
+}
+.headfoot {
+  width: 750px;
+  border: gray 1px dotted;
+  padding: 5px;
+  background-color: white;
+  text-align: center;
+}
+.my_article {
+  width: 750px;
+  padding: 5px;
+  border: gray 1px dotted;
+}
+.trans01 { background: linear-gradient(to left, purple, blue, green, yellow, red, purple);  }
+.trans02 { background: radial-gradient( purple, blue, green, yellow, red, purple);  }

@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+footer,header,nav {
+text-align: center;
+margin-top: 1px;
+}
+
+footer {border: 2px solid red;}
+header {border: 4px solid black;}
+nav {border: 6px solid blue;}
+
+
+/* Grauer Text*/
+h1,
+abbr { color: gray; }
+
+/* Grauer gepunkteter Rahmen*/
+p { border: 1px dotted gray; }
+
+
+ */
+ 

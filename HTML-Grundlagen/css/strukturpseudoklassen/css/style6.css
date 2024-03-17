@@ -1,0 +1,5 @@
+p::first-line { font-weight: bold; }
+p::first-letter{ font-size: xx-large; float: left; }
+h1::-moz-selection { background-color: orange; color:red; }
+td.zeit::before { content: "ca: "; }
+td.zeit::after  { content: " Minuten"; }

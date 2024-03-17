@@ -1,0 +1,18 @@
+body { 
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 62.5%;
+}
+footer, header {
+  background-color: papayawhip;
+  border: 1px solid black;
+  padding: 2%;
+  text-align:center;
+  font-size: 2.0em;
+} 
+article {
+  font-family: Georgia, Times, serif;
+  font-size: 1.8em;
+ }
+.p-75 { line-height: 75%; }
+.p-100 { line-height: 100%; }
+.p-150 { line-height: 150%; }

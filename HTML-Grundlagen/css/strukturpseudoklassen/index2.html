@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Pseudoklassen</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style2.css">
+  </head>
+  <body>
+ 	<!-- Ist das erste Child-Element von Body -->
+    <h1>:first-child in body</h1>
+    <!-- Das zweite Element wird nicht formatiert --> 
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+    <h2>:first-child und :last-child auf Tabelle</h2>
+    <table>
+      <tbody>
+      	<!--  TR das erste Child-Element von tbody> -->
+        <tr><td>:first-child in tr</td><td>nur Text</td><td>:last-child in tr</td></tr>
+	    <tr><td>:first-child in tr</td><td>nur Text</td><td>:last-child in tr</td></tr>
+      </tbody>
+    </table>
+    <ul>
+    	<!--   -->
+      <li>Das wird von :first-child in ul ausgewählt.</li>
+      <li>Das wird nicht ausgewählt.</li>
+      <li>Das wird nicht ausgewählt.</li>
+      <li>Das wird von :last-child in ul ausgewählt.</li>
+    </ul>
+    <!-- Ist das letzte Child-Element von Body -->
+    <p>Das hier wird von :last-child von body ausgewählt.</p>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Schaltflächen</title>
+    <style>
+    	input:invalid {background: red;}
+    	input:valid {background: ivory;}
+    </style>
+</head>
+<body>
+    <h1>Schaltflächen</h1>
+<form id="formular1" oninput="oval.value=parseInt(ival.value)">
+Ihre Nachricht:<br>
+  <textarea  name="txt" rows="8" cols="36" maxlength="2500">
+    Hier Ihre Nachricht eingeben ...
+  </textarea><br>
+   <input type="reset" value="Abbrechen" style="width: 80px;">
+  <button type="button" value="berechnen" >Anklickbarer Button</button>
+  <input type="hidden" name="zwischenergebnis" value="399">
+	<input type="color" value="#FF0000">
+	<input type="date" value="2019-12-10">
+	<input type="time" value="13:00" min="08:00" max="14:00">
+	<input type="datetime" value="2019-12-10T14:00">
+	
+	<input type="email" requried multiple>
+	<input type="url" >
+	<input type="number" >
+	<input type="range" id="ival" value="100">
+	<output name="oval" for="ival">100</output>
+	<progress value="33" max="100">Fortschritt 33%</progress>
+	<br>
+	<meter value="12" max="100">12 von 100</meter>12 von 100<br>
+	
+	
+</form>
+
+
+	<p> <input type="submit" value="Absenden" 
+		style="width: 80px;" form="formular1">
+	</p>
+ 
+</body>
+</html>

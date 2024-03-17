@@ -1,0 +1,5 @@
+.meinText {color: #ff0033;}
+.hinweis {font-style:italic; color: #ff0033; font-size: 150%;}
+.div {background: rgba{255,255,0,0.5}; width: 10em; height: 10em}
+.tabellenHeader {font-style:italic; color: #ff0033;background-color: #cc33cc; font-size: 100%;}
+.tabellenZeile { background-color: #cc33cc; font-size: 100%;}

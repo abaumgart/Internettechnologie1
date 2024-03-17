@@ -1,0 +1,19 @@
+/* Datei: style.css
+ */
+
+ 
+/* Styling für alle Elemente mit dem Attribut title
+ 
+[title] { border: 4px solid black; } */
+ 
+ 
+/* Styling for alle a-Element mit dem Attribut title
+ */
+[title] { 
+  text-decoration: none;
+  color: gray;
+  font-weight: bold;
+  border: 4px solid black;
+}
+
+

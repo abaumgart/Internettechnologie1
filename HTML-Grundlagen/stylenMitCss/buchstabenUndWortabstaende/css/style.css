@@ -1,0 +1,18 @@
+body { 
+  font: 1.125em/150% Georgia, Times, serif;
+}
+footer, header {
+  background-color: papayawhip;
+  border: 1px solid black;
+  padding: 2%;
+  text-align:center;
+  font-size: 1.1em;
+} 
+h1 { font-size: 1.3em;
+     font-style: italic;
+     text-transform: uppercase;
+     letter-spacing: 0.3em;
+}
+p {  font-size: 1em; }
+.letterspace { letter-spacing: 0.2em; }
+.wordspace{ word-spacing: 0.9em;}

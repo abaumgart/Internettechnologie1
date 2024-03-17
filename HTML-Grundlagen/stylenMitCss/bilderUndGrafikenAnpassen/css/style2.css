@@ -1,0 +1,18 @@
+body { 
+  font: 1.1em/120% Georgia, Times, serif;
+}  
+.large  { width: 300px; height: 300px; }
+.medium { width: 200px; height: 200px; }
+.small { width: 100px; height: 100px; }
+.align-left {
+  float: left;
+  margin: 0 0.6em 0.3em 0;
+}
+.align-right {
+  float: right;
+  margin: 0 0 0.3em 0.6em;
+}
+.align-center {
+  display: block;
+  margin: 0px auto;
+}

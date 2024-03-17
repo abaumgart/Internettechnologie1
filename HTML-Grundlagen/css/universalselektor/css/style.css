@@ -1,0 +1,15 @@
+
+ 
+/* Schwarzer Rahmen für alle Elemente
+ */
+  * { 
+  margin: 5px;
+  padding: 3px;
+  border: 1px dotted black;
+  text-align: center; 
+}
+
+/* Dickerer Rahmen um das main-Element */
+/* main { border: 2px solid black; } */
+
+/* Dickerer Rahmen um alle HTML-Element innerhalb vom main-Element */

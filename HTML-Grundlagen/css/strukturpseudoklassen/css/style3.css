@@ -1,0 +1,5 @@
+tr:nth-child(odd) { background: lightgray; }
+tr:nth-child(even) { background: grey; }
+tr:nth-child(1) { background: red; }
+li:nth-last-child(odd) { color: blue; }
+li:nth-last-child(even) { color: lightgray; }

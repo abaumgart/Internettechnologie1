@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Videos abspielen</title>
+  <style>
+    video{border: 5px solid black;}
+  </style>
+</head>
+<body>
+<h1>Abspielen von Videos mit Untertiteln</h1>
+
+<video width="480" id="myvideo" controls poster="poster.jpg">
+  <source src="video/Varanasi.ogv" type="video/ogg">
+  <source src="video/Varanasi.webm" type="video/webm">
+  <source src="video/Varanasi.MP4" type="video/mp4">
+  <track src="subtitel/untertitel.vtt" kind="subtitles" srclang="de" label="Deutsch">
+  <track src="subtitel/untertitel_en.vtt" kind="subtitles" srclang="uk" label="Englisch">
+Ihr Webbrowser unterstützt das video-Tag nicht.
+</video>
+
+
+</body>
+</html>

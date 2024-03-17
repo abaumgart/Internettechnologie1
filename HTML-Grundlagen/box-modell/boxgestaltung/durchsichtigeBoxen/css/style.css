@@ -1,0 +1,27 @@
+*{
+  box-sizing: border-box;        
+} 
+html {
+  height: 100%;
+  background-image: url('../bilder/background.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border: black 1px solid;
+}
+.article_01 {
+  width: 90%;
+  padding: 10px;
+  background-color: white;
+  border: black 1px dotted;
+  opacity: 0.5;
+}
+.article_02 {
+  width: 90%;
+  padding: 10px;
+  background-color: white;
+  border: black 1px dotted;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.csscode { font-weight: bolder; background: lightgrey; }
+.h_2 { background : gold; }
+.h_1 { background: white; }

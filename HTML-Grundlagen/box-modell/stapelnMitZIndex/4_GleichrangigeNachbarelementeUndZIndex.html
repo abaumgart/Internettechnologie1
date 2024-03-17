@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Überlappende Elemente mit z-index</title>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/style4.css">
+  </head>
+  <body>
+    <header class="foothead">Kopfzeile</header>
+     <!-- Artikel 1 und 2 sind gleichrangige Nachbar-Elemente
+     Alle darin enthaltenen Nachkommen-Elemente werden immer über das 
+     Nachbar-Element gestellt. -->
+      <article class="article01">
+        <h1>Artikel 1</h1>
+        <!-- Trotz des niedrigeren z-Index wird der Absatz (Klassenselektor -.article_p1)
+        	über dem Nachbar-Element (Klassenselektor -.article02) angeordnet, weil das 
+        	ElternElement (Klassenselektor -.article01) einen höheren z-index enthält.-->
+        <p class="article_p1">Lorem ipsum dolor sit amet, consectetuer 
+        	adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
+	  </article>
+      <article class="article02">
+        <h1>Artikel 2</h1>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
+      </article>
+    <footer class="foothead">Fußzeile</footer>
+  </body>
+</html>

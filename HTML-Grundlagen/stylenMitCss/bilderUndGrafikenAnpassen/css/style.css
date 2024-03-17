@@ -1,0 +1,6 @@
+body { 
+  font: 1.1em/120% Georgia, Times, serif;
+}   
+.large  { width: 300px; height: 300px; }
+.medium { width: 200px; height: 200px; }
+.small { width: 100px; height: 100px; }

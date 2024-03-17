@@ -1,0 +1,9 @@
+.up { 
+  position: fixed; 
+  bottom: 20px; 
+  right: 20px;
+  padding : 15px;
+  border: 4px solid sienna;
+  background-color: sandybrown; 
+  color: black;
+}

@@ -1,0 +1,10 @@
+body { 
+  font: 1.1em/120% Georgia, Times, serif;
+}
+h1 { font-size: 1.3em; }
+p {  
+  font-size: 1em;
+}
+.underline { text-decoration: underline; }
+.a-no-underline { text-decoration: none; }
+.line-through { text-decoration: line-through; }
