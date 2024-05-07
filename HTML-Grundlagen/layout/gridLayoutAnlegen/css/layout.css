@@ -26,15 +26,15 @@
 }
 
 .content {
-	grid-column:1/6;
-	grid-row:3/4;
+	grid-column:1/4;
+	grid-row:3/5;
 	border: 2px solid #efefef
 	
 }
 
 .aside {
-	grid-column:1/6;
-	grid-row:4/5;
+	grid-column:4/6;
+	grid-row:3/5;
 	border: 2px solid #efefef
 	
 }

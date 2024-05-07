@@ -1,6 +1,6 @@
 ol {list-style-type: decimal; list-style-position:inside;}
 ol.first {list-style-type: lower-roman;}
 ol.second {list-style-type: lower-alpha;}
-ul {list-style-type: none; backgroundcolor=red ;display: inline;}
+//ul {list-style-type: none; backgroundcolor=red ;display: inline;}
 
 dl { font-size: 0.7 em ; font-family: Verdana,Arial,sans-serif; }

@@ -9,7 +9,7 @@
  
 /* Styling for alle a-Element mit dem Attribut title
  */
-[title] { 
+[title~=titel] { 
   text-decoration: none;
   color: gray;
   font-weight: bold;
