@@ -7,7 +7,8 @@ const studiengaenge = [
 'Wirtschaftsingenieurwesen',
 'Wirtschaftsinformatik',
 'Maschinenbau',
-'Architektur'
+'Architektur',
+	'Mediendesign'
 ];
 for(let i=0; i<studiengaenge.length;i++){
 	const optionElement = document.createElement('option'); 
