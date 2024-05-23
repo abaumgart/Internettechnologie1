@@ -1,0 +1,35 @@
+/* CSS Document */
+
+math {
+		font-size: 20px;
+	 }
+
+input {
+	width: 20px;
+}
+p input {
+	width: 40px;
+}
+
+/* CSS für die Tabelle */
+    table {
+        width: 50%;
+        margin: 10px auto;
+        border-collapse: collapse;
+        box-shadow: 0 2px 3px rgba(188,185,185,0.10);
+    }
+    th, td {
+        padding: 12px 15px;
+        border: 1px solid #ddd;
+        text-align: left;
+    }
+    th {
+        background-color: #EFBCFA;
+        color: #333;
+    }
+    tr:nth-child(odd) {
+        background-color: #f9f9f9;
+    }
+    tr:hover {
+        background-color: #D5D1D4;
+    }
