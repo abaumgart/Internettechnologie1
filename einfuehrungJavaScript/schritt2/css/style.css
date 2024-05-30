@@ -69,3 +69,14 @@ a:link { text-decoration:none; color: #FFFFFF; }
 a:hover { color: #C2C2C2 }
 a:active { color: #D7C0CC; }
 
+
+.beliebtesteKneipe{
+	position: absolute;
+	top: 0;
+	left: 500px;
+	width: 200px;
+	padding: 10px;
+	border: 1px solid blue;
+	background-color: darkorange;
+}
+
