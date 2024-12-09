@@ -1,6 +1,0 @@
-// JavaScript Document
-
-function gleichungLoesen()
-	{
-	
-	}
