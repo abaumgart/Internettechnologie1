@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Das erste JavaScript-Programm</title>
+	
+</head>
+		
+<body>
+	<h1>Aufgabenliste</h1>
+	<p>Bitte schaue dafür vorher in der YouTube-Playlist das Video mit dem Titel index14.htm an.</p>
+	<p>&nbsp;</p>
+	<label for="todo">Trage deine Aufgabe ein:</label>
+<input id="todo" name="todo">
+	<hr>
+	<button onClick="pushMethode()">In Liste übernehmen push() wird ausgeführt</button>
+	<hr>
+	<button onClick="unshiftMethode()">In Liste übernehmen unshift() wird ausgeführt</button>
+	<hr>
+<label for="splice">Eintrag beim index: </label><input name="splice" id="splice"> einfügen.<button onClick="spliceMethode()">Fügt Eintrag an vorgegebener Stelle  hinzu.</button>
+	<hr>
+	<button onClick="popMethode()">pop() entfernt das letzte Element aus einer Liste.</button>
+	<hr>
+	<button onClick="shiftMethode()">shift-Methode() entfernt das erste Element aus einer Liste.</button>
+	<hr>
+	<label for="loeschenAb">Ab welchem Index soll gelöscht werde? </label><input name="loeschenAb" id="loeschenAb">.
+	<label for="anzElemente">Wie viele Elemente löschen? </label><input name="anzElemente" id="anzElemente">.
+	<button onClick="spliceDeleteMethode()">splice-Methode() entfernt n Elemente in einer Liste ab einer bestimmten Position.</button>
+	<hr>
+	<button onClick="listeUmkehren()">reverse-Methode() kehrt die Reihenfolge der Elemente um.</button>
+	<hr>
+
+	<br>Inhalte des Arrays:<b><output id="ausgabe"></output></b>
+	<br>Anzahl deiner To: <output id="anzToDo"></output>
+<script src="js/javascript14.js"></script>
+</body>
+</html>

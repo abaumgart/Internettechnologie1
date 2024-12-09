@@ -14,7 +14,6 @@ if (plattformen[0].trendPopularitaet > 600) {
 }
 console.log(`TikTok: Der Einfluss des Trends ist ${nachricht}.`);
 
-
 if (plattformen[1].trendPopularitaet > 600) {
   nachricht = "hoch";
 } else {
