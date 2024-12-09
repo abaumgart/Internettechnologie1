@@ -2,7 +2,7 @@
  
 /* Schwarzer Rahmen für alle Elemente
  */
-   * { 
+  main * { 
   margin: 5px;
   padding: 3px;
   border: 1px dotted black;

@@ -2,7 +2,12 @@
 CSS Document 
 
 */
+
+
+/*Selektor	{Deklaration besteht aus Eigenschaft und Wert} */
 header {
 				background: #add8e6; 
 				text-align:center;
 				}
+
+h2 {color:#677E93;}

@@ -3,17 +3,12 @@
 
  
 /* Styling für alle Elemente mit dem Attribut title
+ */
+a[title] { border: 4px solid black; } 
  
-[title] { border: 4px solid black; } */
- 
- 
+ [title~=hallo]{ border: 4px solid red; } 
 /* Styling for alle a-Element mit dem Attribut title
  */
-[title~=titel] { 
-  text-decoration: none;
-  color: gray;
-  font-weight: bold;
-  border: 4px solid black;
-}
+a[href$=".pdf"]{ border: 4px solid #DB00FF; } 
 
 
