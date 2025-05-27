@@ -1,5 +1,20 @@
 // JavaScript Document
 
+// Entfernung zum Ziel berechnen (Zufallszahl). 
+// Wird auf der Webseite ausgegeben> HTML-Element 
+// wird für die Ausgabe benötigt
+
+// Globale Variable für das Ziel
+let entfernungZumZiel;
+
+entfernungZumZiel = zielEntfernungBerechnen();
+document.getElementById("zielentfernung").innerText=entfernungZumZiel;
+function zielEntfernungBerechnen()
+	{
+		return 50;
+	}
+
+
 function berechnen()
 {
 	console.log("Button wurde gedrückt!");
@@ -9,7 +24,7 @@ function berechnen()
 	console.log(v0);
 	
 	// Eingaben in Input-Feldern sind Zeichenketten.
-	// Deshalb ist eine Umwandlung in numerische werte notwendig
+	// Deshalb ist eine Umwandlung in numerische Werte notwendig
 	
 	winkel = parseInt(winkel);
 	v0= parseInt(v0);
@@ -26,10 +41,13 @@ function berechnen()
 	wurfweite= (v0*v0 * Math.sin(2*winkel))/9.81;
 	console.log (wurfweite);
 	
+	// Abrunden, wenn der Dezimalanteil kleiner 0.5 und aufrunden, wenn der Anteil 0.5 oder größer ist.
+	// Math.round(wert)
+	wurfweite=Math.round(wurfweite);
+	
+	document.getElementById('ergebnis').innerText = wurfweite;
 	
 	
-	//seiteB = document.getElementById('seiteB').value;
-	//flaeche = seiteA*seiteB;
-	// alert(flaeche);
-	//document.getElementById('ergebnis').value=flaeche;
+	
 }
+

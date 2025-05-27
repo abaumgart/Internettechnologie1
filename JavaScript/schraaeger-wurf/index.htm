@@ -3,7 +3,22 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Schräger Wurf</title>
-	
+	<style>
+        .zielentfernung {
+            max-width: 300px;
+            margin: 20px auto;
+            padding: 20px;
+            text-align: center;
+            background-color: #FFE552;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .zielentfernungWert {
+            font-size: 36px;
+            color: #333;
+            font-weight: bold;
+        }
+    </style>
 </head>
 		
 <body>
@@ -13,6 +28,10 @@
 		<input type="text" id="v0" placeholder="Anfangsgeschwindigkeit">
 		<button onClick="berechnen()">Berechnung starten</button>
 		<output id="ergebnis"></output>
+		<div class="zielentfernung">
+			
+			<output class="zielentfernungWert" id="zielentfernung"></output>
+		</div>
 		<script src="javascript/sw.js"></script>
 </body>
 </html>
