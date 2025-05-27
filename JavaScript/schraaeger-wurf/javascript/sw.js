@@ -11,7 +11,8 @@ entfernungZumZiel = zielEntfernungBerechnen();
 document.getElementById("zielentfernung").innerText=entfernungZumZiel;
 function zielEntfernungBerechnen()
 	{
-		return 50;
+		ziel = Math.round(Math.random()*90+10);
+		return ziel;
 	}
 
 
