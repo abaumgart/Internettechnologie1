@@ -6,6 +6,8 @@
 
 // Globale Variable für das Ziel
 let entfernungZumZiel;
+let counter=0; // Variable für das Zählen der Versuche
+let anzahlVersuche=5;
 
 
 entfernungZumZiel = zielEntfernungBerechnen();
@@ -13,6 +15,16 @@ let toleranz=3; // Toleranz, mit der die Wurfweite von der Entfernung abweichen 
 let minWurfweite= entfernungZumZiel-toleranz;
 let maxWurfweite= entfernungZumZiel+toleranz;
 document.getElementById("zielentfernung").innerText=entfernungZumZiel;
+
+
+function elementeDeaktivieren()
+	{
+	   	document.getElementById("btn_berechnung").disabled=true;
+		document.getElementById("winkel").disabled=true;
+		document.getElementById("v0").disabled=true;
+	}
+
+
 function zielEntfernungBerechnen()
 	{
 		ziel = Math.round(Math.random()*90+10);
@@ -54,13 +66,30 @@ function berechnen()
 	
 	console.log(minWurfweite); // Testweise Zugriff und Ausgabe auf die globale Variable entfernungZumZiel
 	console.log(maxWurfweite);
+	// Counter erhöhen
+	counter++;
 	if((wurfweite>minWurfweite)&&(wurfweite<maxWurfweite) )
 		{
 			console.log("Treffer");
+			console.log("Sie haben "+counter+" Versuche benötigt.");
+		
 		}
 			else
 				{
 					console.log("Leider daneben");
 				}	
+	
+	console.log("Aktueller Wurfversuch: "+counter);
+
+	// Wenn Anzahl der Versuche größer 2 ist, dann
+	// Button deaktivieren
+	
+	if(counter>=anzahlVersuche)
+	   {
+	   	elementeDeaktivieren();
+	   }
+	
+	
+	
 }
 
