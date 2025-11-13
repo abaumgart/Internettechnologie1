@@ -6,8 +6,10 @@ CSS Document
 
 /*Selektor	{Deklaration besteht aus Eigenschaft und Wert} */
 header {
-				background: #add8e6; 
+				background: #DAADE6; 
 				text-align:center;
 				}
+h2, 
+h3 {color:#677E93;}
 
-h2 {color:#677E93;}
+

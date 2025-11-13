@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Campus Medienlabor – Sendungsübersicht</title>
+</head>
+<body>
+
+<header id="studio-kopf">
+    <img src="grafiken/studio-logo.png" alt="Campus Medienlabor Logo" class="logo">
+    <h1>Campus Medienlabor</h1>
+    <p>Fernsehstudio und Verlag für Medienwirtschaft und Journalismus</p>
+</header>
+
+<nav class="hauptnavigation">
+    <ul>
+        <li><a href="#top-themen" class="navi-link">Top-Themen</a></li>
+        <li><a href="#sendeplan" class="navi-link">Sendeplan</a></li>
+        <li><a href="#team" class="navi-link">Redaktion</a></li>
+        <li><a href="#kontakt-formular" class="navi-link">Kontakt</a></li>
+    </ul>
+</nav>
+
+<main>
+
+    <section id="top-themen">
+        <h2>Aktuelle Top-Themen</h2>
+
+        <article class="-aufmacher">
+            <h3>Live-Gespräch: Medien und Demokratie</h3>
+            <p>In dieser Sendung diskutieren Studierende und Expertinnen über die Rolle von Medien in demokratischen Gesellschaften.</p>
+            <a href="#mehr1" class="mehr-link">Mehr erfahren</a>
+        </article>
+
+        <article class="-aufmacher">
+            <h3>Hinter den Kulissen: Produktion im Studio</h3>
+            <p>Ein Blick hinter die Kulissen: Wie entsteht eine Sendung im Campus Medienlabor?</p>
+            <a href="#mehr2" class="mehr-link">Mehr erfahren</a>
+        </article>
+
+        <article class="-aufmacher">
+            <h3>Journalismus im Wandel</h3>
+            <p>Studierende berichten über Trends im digitalen Journalismus.</p>
+            <a href="#mehr3" class="mehr-link">Mehr erfahren</a>
+        </article>
+    </section>
+
+    <section id="sendeplan">
+        <h2>Sendeplan heute</h2>
+        <ul class="sendeplan-liste">
+            <li>18:00 – Campus Nachrichten</li>
+            <li>18:30 – Medien-Debatte</li>
+            <li>19:00 – Studiogespräch</li>
+            <li>19:30 – Campus Report</li>
+        </ul>
+    </section>
+
+    <section id="team">
+        <h2>Redaktionsteam</h2>
+
+        <div class="team-karte">
+            <img src="grafiken/moderatorin-anna.jpg" alt="Moderatorin Anna" class="team-foto">
+            <h3>Anna Müller</h3>
+            <p class="rolle">Moderation und Redaktion</p>
+            <p>Verantwortlich für die Campus Nachrichten.</p>
+        </div>
+
+        <div class="team-karte">
+            <img src="grafiken/moderator-ben.jpg" alt="Moderator Ben" class="team-foto">
+            <h3>Ben Schneider</h3>
+            <p class="rolle">Moderation</p>
+            <p>Moderiert Diskussionsrunden zu Medienthemen.</p>
+        </div>
+    </section>
+
+    <section id="status">
+        <h2>Produktionsstatus</h2>
+        <p>
+            <span class="status ok">Studio A: bereit</span> |
+            <span class="status fehler">Studio B: Aufnahme unterbrochen</span>
+        </p>
+    </section>
+
+    <section id="nachrichten">
+        <h2>Nachrichten aus der Redaktion</h2>
+
+        <div class="nachrichten-box">
+            <p>Hinweis der Chefredaktion</p>
+            <p>Bitte alle Sendungstexte spätestens 24 Stunden vorher einpflegen.</p>
+        </div>
+
+        <div class="nachrichten-box">
+            <p>Technik-Information</p>
+            <p>Studio B ist voraussichtlich ab 20 Uhr wieder verfügbar.</p>
+        </div>
+    </section>
+
+    <section id="kontakt-formular">
+        <h2>Kontakt zur Redaktion</h2>
+        <form id="studio-kontakt">
+            <div class="formular-zeile">
+                <label for="name">Name:</label>
+                <input type="text" id="name">
+            </div>
+
+            <div class="formular-zeile">
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email">
+            </div>
+
+            <div class="formular-zeile">
+                <label for="thema">Thema:</label>
+                <select id="thema">
+                    <option>Rückmeldung</option>
+                    <option>Sendungsidee</option>
+                    <option>Sonstiges</option>
+                </select>
+            </div>
+
+            <div class="formular-zeile">
+                <label for="nachricht">Nachricht:</label>
+                <textarea id="nachricht"></textarea>
+            </div>
+
+            <div class="formular-zeile">
+                <button type="submit" class="senden-button">Nachricht senden</button>
+            </div>
+        </form>
+    </section>
+
+</main>
+
+<footer class="seiten-fuss">
+    <p>&copy; 2025 Campus Medienlabor</p>
+</footer>
+
+</body>
+</html>

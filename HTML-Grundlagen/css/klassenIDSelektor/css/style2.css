@@ -16,6 +16,14 @@
   font-family: Verdana, Arial;
 }
 
+#absatz { 
+  text-align:center;
+  border: 15px solid black;
+  margin-top: 5px;
+  padding: 5px;
+  font-family: Verdana, Arial;
+}
+
 /* Schriftgröße auf 140%
    Hintergrundfarbe auf grau
 */
