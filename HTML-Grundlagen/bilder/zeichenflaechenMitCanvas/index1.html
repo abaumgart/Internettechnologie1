@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>SVG Beispiel</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      color: white;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 16px;
+      width: 300px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    svg {
+      width: 100%;
+      height: auto;
+    }
+
+    /* SVG-Animation */
+    .circle {
+      fill: #38bdf8;
+      transition: fill 0.3s, transform 0.3s;
+    }
+
+    .card:hover .circle {
+      fill: #f472b6;
+      transform: scale(1.2);
+    }
+
+    h2 {
+      margin-top: 15px;
+    }
+
+    p {
+      font-size: 14px;
+      color: #cbd5f5;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+
+    <!-- Inline SVG -->
+    <svg viewBox="0 0 200 200">
+      <circle class="circle" cx="100" cy="100" r="50" />
+      <rect x="70" y="70" width="60" height="60" fill="none" stroke="white" stroke-width="3"/>
+    </svg>
+
+    <h2>SVG Visual</h2>
+    <p>Ein einfaches, skalierbares Grafik-Element mit CSS-Interaktion.</p>
+
+  </div>
+
+</body>
+</html>
