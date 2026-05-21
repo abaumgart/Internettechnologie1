@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Schritt 0 – Nur HTML</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Festival Reporter Live</h1>
+    <p>Schritt 0: Struktur ohne JavaScript</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Line-up</h2>
+      <label for="genre-auswahl">Genre wählen:</label>
+      <select id="genre-auswahl">
+        <option value="alle">Alle</option>
+        <option value="deutschpop">Deutschpop</option>
+        <option value="electro">Electro</option>
+        <option value="indie">Indie</option>
+      </select>
+      <!-- Hier erscheint später die dynamische Liste -->
+      <div id="lineup-liste">
+        <p class="hinweis-text">Liste wird in Schritt 2 per JavaScript gefüllt.</p>
+      </div>
+    </section>
+
+    <section>
+      <h3>Künstlerdetails</h3>
+      <div id="kuenstler-details" class="detail-bereich">Noch keine Auswahl.</div>
+    </section>
+
+    <hr />
+
+    <section>
+      <h2>Gastronomie</h2>
+      <div id="gastro-liste">
+        <p class="hinweis-text">Foodtrucks werden in Schritt 5 per JavaScript gefüllt.</p>
+      </div>
+    </section>
+
+    <section>
+      <h3>Speisekarte</h3>
+      <div id="speisekarte-details" class="detail-bereich">Noch kein Foodtruck gewählt.</div>
+    </section>
+  </main>
+
+  <!-- Noch KEIN script – bewusst! -->
+</body>
+</html>
