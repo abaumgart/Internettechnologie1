@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Schritt 3 – Filter (change)</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Festival Reporter Live</h1>
+    <p>Schritt 3: Genre filtern mit <code>filter()</code> und <code>change</code>-Event</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Line-up</h2>
+      <label for="genre-auswahl">Genre wählen:</label>
+      <select id="genre-auswahl">
+        <option value="alle">Alle</option>
+        <option value="deutschpop">Deutschpop</option>
+        <option value="electro">Electro</option>
+        <option value="indie">Indie</option>
+      </select>
+      <div id="lineup-liste"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
