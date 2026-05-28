@@ -1,0 +1,210 @@
+/* =============================================
+   Festival Reporter Live – gemeinsames Stylesheet
+   Alle visuellen Angaben gehören hierher (nicht in app.js).
+   ============================================= */
+
+:root {
+  --farbe-hintergrund: #f4f1ec;
+  --farbe-karte: #ffffff;
+  --farbe-akzent: #c45c26;
+  --farbe-akzent-dunkel: #8f3d14;
+  --farbe-text: #1a1a1a;
+  --farbe-text-hell: #5c5c5c;
+  --farbe-rand: #d4cfc7;
+  --abstand-klein: 0.5rem;
+  --abstand-mittel: 1rem;
+  --abstand-gross: 1.5rem;
+  --radius: 8px;
+  --schatten: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--farbe-text);
+  background-color: var(--farbe-hintergrund);
+}
+
+header {
+  background: linear-gradient(135deg, var(--farbe-akzent), var(--farbe-akzent-dunkel));
+  color: #fff;
+  padding: var(--abstand-gross);
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 var(--abstand-klein);
+  font-size: 1.75rem;
+}
+
+header p {
+  margin: 0;
+  opacity: 0.95;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: var(--abstand-gross);
+}
+
+section {
+  background: var(--farbe-karte);
+  border: 1px solid var(--farbe-rand);
+  border-radius: var(--radius);
+  padding: var(--abstand-gross);
+  margin-bottom: var(--abstand-gross);
+  box-shadow: var(--schatten);
+}
+
+section h2 {
+  margin-top: 0;
+  color: var(--farbe-akzent-dunkel);
+  font-size: 1.25rem;
+}
+
+section h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+}
+
+hr {
+  border: none;
+  border-top: 2px dashed var(--farbe-rand);
+  margin: var(--abstand-gross) 0;
+}
+
+label {
+  display: block;
+  margin-bottom: var(--abstand-klein);
+  font-weight: 600;
+}
+
+select,
+.knopf {
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+select {
+  width: 100%;
+  max-width: 280px;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--farbe-rand);
+  border-radius: var(--radius);
+  background: #fff;
+  margin-bottom: var(--abstand-mittel);
+}
+
+.hinweis-text {
+  color: var(--farbe-text-hell);
+  font-style: italic;
+}
+
+/* Dynamisch erzeugte Kacheln (Line-up) */
+.kachel {
+  border: 1px solid var(--farbe-rand);
+  border-radius: var(--radius);
+  padding: var(--abstand-mittel);
+  margin-bottom: var(--abstand-mittel);
+  background: #faf9f7;
+}
+
+.kachel strong {
+  font-size: 1.1rem;
+  color: var(--farbe-akzent-dunkel);
+}
+
+/* Dynamisch erzeugte Einträge (Gastro) */
+.eintrag {
+  border: 1px solid var(--farbe-rand);
+  border-radius: var(--radius);
+  padding: var(--abstand-mittel);
+  margin-bottom: var(--abstand-mittel);
+  background: #faf9f7;
+}
+
+/* Buttons – nur Klassen, keine inline-Styles in JS */
+.knopf,
+.details-knopf,
+.speisekarte-knopf,
+.timetable-knopf {
+  display: inline-block;
+  margin-top: var(--abstand-klein);
+  margin-right: var(--abstand-klein);
+  padding: 0.4rem 0.9rem;
+  border: none;
+  border-radius: var(--radius);
+  background: var(--farbe-akzent);
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.knopf:hover,
+.details-knopf:hover,
+.speisekarte-knopf:hover,
+.timetable-knopf:hover {
+  background: var(--farbe-akzent-dunkel);
+}
+
+.timetable-knopf {
+  background: #3d6b8f;
+}
+
+.timetable-knopf:hover {
+  background: #2a4d66;
+}
+
+/* Detailbereiche (statisch im HTML oder per JS befüllt) */
+.detail-bereich {
+  min-height: 4rem;
+  padding: var(--abstand-mittel);
+  border-radius: var(--radius);
+  background: #f0ebe3;
+  border-left: 4px solid var(--farbe-akzent);
+}
+
+#kuenstler-details,
+#speisekarte-details {
+  min-height: 4rem;
+  padding: var(--abstand-mittel);
+  border-radius: var(--radius);
+  background: #f0ebe3;
+  border-left: 4px solid var(--farbe-akzent);
+}
+
+#kuenstler-details ul,
+#speisekarte-details ul {
+  margin: var(--abstand-klein) 0 0;
+  padding-left: 1.25rem;
+}
+
+/* Timetable-Liste */
+#timetable-liste {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+#timetable-liste li {
+  margin-bottom: var(--abstand-klein);
+  padding: var(--abstand-klein);
+  background: #faf9f7;
+  border-radius: var(--radius);
+  list-style: none;
+  border: 1px solid var(--farbe-rand);
+}
+
+#timetable-liste {
+  padding-left: 0;
+}
+
+section small {
+  color: var(--farbe-text-hell);
+}

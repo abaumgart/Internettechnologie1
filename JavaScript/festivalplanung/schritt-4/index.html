@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Schritt 4 – Details (click)</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Festival Reporter Live</h1>
+    <p>Schritt 4: Klick auf Kachel → Künstlerdetails</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Line-up</h2>
+      <label for="genre-auswahl">Genre wählen:</label>
+      <select id="genre-auswahl">
+        <option value="alle">Alle</option>
+        <option value="deutschpop">Deutschpop</option>
+        <option value="electro">Electro</option>
+        <option value="indie">Indie</option>
+      </select>
+      <div id="lineup-liste"></div>
+    </section>
+
+    <section>
+      <h3>Künstlerdetails</h3>
+      <div id="kuenstler-details" class="detail-bereich">Bitte Künstler auswählen.</div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
