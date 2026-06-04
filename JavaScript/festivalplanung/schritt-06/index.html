@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Festival Reporter Live – Version 1 (Schritt 6)</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Festival Reporter Live</h1>
+    <p>Version 1 – Line-up, Gastro, Über uns, Timetable</p>
+  </header>
+
+  <nav class="haupt-navigation" aria-label="Hauptbereiche">
+    <button type="button" class="nav-knopf aktiv" data-bereich="lineup">Line-up</button>
+    <button type="button" class="nav-knopf" data-bereich="gastro">Gastro</button>
+    <button type="button" class="nav-knopf" data-bereich="ueber-uns">Über uns</button>
+    <button type="button" class="nav-knopf" data-bereich="timetable">Mein Timetable</button>
+  </nav>
+
+  <main>
+    <!-- LINE-UP (Use Case: Künstlerkachel + Filter) -->
+    <section id="bereich-lineup" class="bereich sichtbar">
+      <h2>Line-up</h2>
+      <p class="hinweis-text">Genre wählen – aktives Genre ist hervorgehoben, passive sind abgedunkelt.</p>
+
+      <div id="genre-knoepfe" class="genre-knoepfe"></div>
+      <button type="button" id="genre-alle-knopf" class="knopf">Alle Genres anzeigen</button>
+
+      <div id="lineup-liste"></div>
+
+      <h3>Künstlerdetails</h3>
+      <div id="kuenstler-details" class="detail-bereich">Bitte „Details“ bei einem Act klicken.</div>
+    </section>
+
+    <!-- GASTRO (Use Case: Foodtruck + Speisekarte) -->
+    <section id="bereich-gastro" class="bereich">
+      <h2>Gastronomie</h2>
+      <p class="hinweis-text">Foodtruck wählen → Speisekarte erscheint unten.</p>
+      <div id="gastro-liste"></div>
+
+      <h3>Speisekarte</h3>
+      <div id="speisekarte-details" class="detail-bereich">Bitte Foodtruck auswählen.</div>
+    </section>
+
+    <!-- ÜBER UNS (Use Case: Fotogalerie) -->
+    <section id="bereich-ueber-uns" class="bereich">
+      <h2>Über das Festival</h2>
+      <p>Kurzinfo: Ein Wochenende voller Musik, Food und Community im Herzen der Altstadt.</p>
+
+      <h3>Galerie – Eindrücke aus Vorjahren</h3>
+      <div id="galerie-anzeige" class="galerie-karte">
+        <p id="galerie-titel" class="galerie-titel">–</p>
+        <p id="galerie-info" class="galerie-info">–</p>
+      </div>
+      <div class="galerie-steuerung">
+        <button type="button" id="galerie-zurueck" class="knopf">← Zurück</button>
+        <span id="galerie-zaehler"></span>
+        <button type="button" id="galerie-weiter" class="knopf">Weiter →</button>
+      </div>
+    </section>
+
+    <!-- TIMETABLE (Use Case: Create your own timetable – vereinfacht) -->
+    <section id="bereich-timetable" class="bereich">
+      <h2>Mein Timetable</h2>
+      <p class="hinweis-text">Acts im Line-up mit „Zum Timetable“ hinzufügen. Entfernen per Button.</p>
+      <ul id="timetable-liste"></ul>
+      <p id="timetable-leer" class="hinweis-text">Noch keine Acts im persönlichen Plan.</p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

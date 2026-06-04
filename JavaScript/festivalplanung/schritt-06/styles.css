@@ -1,0 +1,283 @@
+/* Festival Reporter Live – Schritt 6 (Version 1 komplett) */
+
+:root {
+  --farbe-hintergrund: #f4f1ec;
+  --farbe-karte: #ffffff;
+  --farbe-akzent: #c45c26;
+  --farbe-akzent-dunkel: #8f3d14;
+  --farbe-text: #1a1a1a;
+  --farbe-text-hell: #5c5c5c;
+  --farbe-rand: #d4cfc7;
+  --farbe-aktiv: #d6f0d6;
+  --farbe-aktiv-rand: #2e8b57;
+  --farbe-passiv: #ececec;
+  --farbe-passiv-text: #888;
+  --abstand-klein: 0.5rem;
+  --abstand-mittel: 1rem;
+  --abstand-gross: 1.5rem;
+  --radius: 8px;
+  --schatten: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--farbe-text);
+  background-color: var(--farbe-hintergrund);
+}
+
+header {
+  background: linear-gradient(135deg, var(--farbe-akzent), var(--farbe-akzent-dunkel));
+  color: #fff;
+  padding: var(--abstand-gross);
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 var(--abstand-klein);
+  font-size: 1.75rem;
+}
+
+header p {
+  margin: 0;
+  opacity: 0.95;
+}
+
+/* Navigation zwischen Bereichen */
+.haupt-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--abstand-klein);
+  padding: var(--abstand-mittel);
+  background: #fff;
+  border-bottom: 1px solid var(--farbe-rand);
+}
+
+.nav-knopf {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--farbe-rand);
+  border-radius: var(--radius);
+  background: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.nav-knopf.aktiv {
+  background: var(--farbe-akzent);
+  color: #fff;
+  border-color: var(--farbe-akzent);
+}
+
+.nav-knopf.passiv {
+  background: #fff;
+  color: var(--farbe-text);
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: var(--abstand-gross);
+}
+
+.bereich {
+  display: none;
+  background: var(--farbe-karte);
+  border: 1px solid var(--farbe-rand);
+  border-radius: var(--radius);
+  padding: var(--abstand-gross);
+  margin-bottom: var(--abstand-gross);
+  box-shadow: var(--schatten);
+}
+
+.bereich.sichtbar {
+  display: block;
+}
+
+.bereich h2 {
+  margin-top: 0;
+  color: var(--farbe-akzent-dunkel);
+}
+
+.bereich h3 {
+  margin-top: var(--abstand-gross);
+  font-size: 1.1rem;
+}
+
+.hinweis-text {
+  color: var(--farbe-text-hell);
+  font-style: italic;
+}
+
+/* Genre-Filter-Knöpfe: isAktiv / isDeaktiviert */
+.genre-knoepfe {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--abstand-klein);
+  margin-bottom: var(--abstand-mittel);
+}
+
+.genre-knopf {
+  padding: 0.45rem 0.9rem;
+  border: 1px solid var(--farbe-rand);
+  border-radius: var(--radius);
+  background: var(--farbe-passiv);
+  color: var(--farbe-passiv-text);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.genre-knopf.aktiv {
+  background: var(--farbe-aktiv);
+  border-color: var(--farbe-aktiv-rand);
+  color: #1a4d2e;
+}
+
+.genre-knopf.deaktiviert {
+  background: var(--farbe-passiv);
+  color: var(--farbe-passiv-text);
+  border-color: #ccc;
+}
+
+.genre-knopf:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Kacheln & Einträge */
+.kachel,
+.eintrag {
+  border: 1px solid var(--farbe-rand);
+  border-radius: var(--radius);
+  padding: var(--abstand-mittel);
+  margin-bottom: var(--abstand-mittel);
+  background: #faf9f7;
+}
+
+.kachel strong {
+  font-size: 1.1rem;
+  color: var(--farbe-akzent-dunkel);
+}
+
+/* Buttons */
+.knopf,
+.details-knopf,
+.speisekarte-knopf,
+.timetable-knopf,
+.entfernen-knopf {
+  display: inline-block;
+  margin-top: var(--abstand-klein);
+  margin-right: var(--abstand-klein);
+  padding: 0.4rem 0.9rem;
+  border: none;
+  border-radius: var(--radius);
+  background: var(--farbe-akzent);
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+
+.knopf:hover,
+.details-knopf:hover,
+.speisekarte-knopf:hover {
+  background: var(--farbe-akzent-dunkel);
+}
+
+.timetable-knopf {
+  background: #3d6b8f;
+}
+
+.timetable-knopf:hover {
+  background: #2a4d66;
+}
+
+.entfernen-knopf {
+  background: #a04040;
+  margin-top: 0;
+}
+
+.entfernen-knopf:hover {
+  background: #7a2e2e;
+}
+
+.detail-bereich {
+  min-height: 4rem;
+  padding: var(--abstand-mittel);
+  border-radius: var(--radius);
+  background: #f0ebe3;
+  border-left: 4px solid var(--farbe-akzent);
+}
+
+#speisekarte-details ul {
+  margin: var(--abstand-klein) 0 0;
+  padding-left: 1.25rem;
+}
+
+/* Galerie */
+.galerie-karte {
+  padding: var(--abstand-gross);
+  background: #faf9f7;
+  border: 1px solid var(--farbe-rand);
+  border-radius: var(--radius);
+  min-height: 120px;
+}
+
+.galerie-titel {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0 0 var(--abstand-klein);
+  color: var(--farbe-akzent-dunkel);
+}
+
+.galerie-info {
+  margin: 0;
+  color: var(--farbe-text-hell);
+}
+
+.galerie-steuerung {
+  display: flex;
+  align-items: center;
+  gap: var(--abstand-mittel);
+  margin-top: var(--abstand-mittel);
+}
+
+#galerie-zaehler {
+  font-weight: 600;
+  color: var(--farbe-text-hell);
+}
+
+/* Timetable */
+#timetable-liste {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#timetable-liste li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--abstand-klein);
+  margin-bottom: var(--abstand-klein);
+  padding: var(--abstand-mittel);
+  background: #faf9f7;
+  border-radius: var(--radius);
+  border: 1px solid var(--farbe-rand);
+}
+
+#timetable-leer.sichtbar {
+  display: block;
+}
+
+#timetable-leer {
+  display: none;
+}
